@@ -9,7 +9,8 @@ setup(
     url='https://github.com/legoktm/jsonchecker/',
     license='Public domain',
     description='A script that validates JSON files and checks for duplicate keys.',
-    long_description=open('README.md').read(),
+    setup_requires=['setuptools-markdown'],
+    long_description_markdown_filename='README.md',
     packages=['jsonchecker'],
     entry_points={
         'console_scripts': [
