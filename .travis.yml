@@ -5,6 +5,8 @@ python:
   - "3.3"
   - "3.4"
 # command to install dependencies
-install: "pip install tox"
+install:
+  - sudo apt-get install pandoc
+  - pip install tox
 # command to run tests
 script: tox
